@@ -1,0 +1,1 @@
+{"name":"fazedores-do-reino","version":"0.1.0","private":true,"type":"module","engines":{"node":">=20"},"scripts":{"dev":"node scripts/server.mjs","check":"node --check public/app.js && node --check public/vr/vr.js && node --test","test":"node --test"}}
