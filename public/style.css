@@ -193,3 +193,105 @@ footer { background: var(--black); color: var(--cream); padding: 55px 7% 25px; }
   .hero-visual, .photo-orbit { transform: none!important; }
   .reveal-ready { opacity: 1; transform: none; }
 }
+/* Comunidade: liderança, ministérios, agenda e conteúdo configurável. */
+.leadership { background: #eadecd; }
+.leadership .eyebrow, .ministries .eyebrow, .events .eyebrow, .cells .eyebrow, .contact .eyebrow { color: #9a1730; }
+.pastor-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; margin-top: 45px; }
+.pastor-empty { grid-column: 1/-1; display: flex; gap: 45px; align-items: center; border: 1px solid #cbb8a5; padding: 40px; }
+.portrait-symbol { width: 160px; aspect-ratio: 1; flex-shrink: 0; display: grid; place-items: center; font: 70px Georgia; color: #a3263e; border-radius: 50%; background: #dccab8; }
+.pastor-empty h3, .pastor-card h3, .ministry-content h3, .service-strip h3, .announcement h3, .event-empty h3, .event-card h3, .cell-card h3, .map-empty h3, .contact h3 { font: 30px Georgia,serif; font-weight: 400; margin: 15px 0; }
+.pastor-empty p, .pastor-card p, .ministry-content p, .service-strip p, .announcement p, .event-empty p, .event-card p, .church-location p, .cell-card p, .contact p { font-size: 13px; line-height: 1.9; color: #79624f; }
+.pastor-card { background: var(--cream); }
+.pastor-card>img { height: 360px; }
+.pastor-card>div { padding: 28px; }
+.ministry-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 45px; }
+.ministry-photo { position: relative; height: 350px; overflow: hidden; background: #161413; }
+.ministry-photo>span { position: absolute; bottom: 20px; left: 25px; z-index: 1; font-size: 9px; letter-spacing: 2px; color: var(--cream); }
+.service-photo img { object-position: center top; }
+.ministry-photo:after { content: ''; position: absolute; inset: 65% 0 0; background: linear-gradient(transparent,#15100dcc); pointer-events:none; }
+.ministry-content { padding: 15px 0 30px; }
+.ministry-content .text-link { display: inline-block; border-color: #baa18a; color: #971830; margin-top: 15px; }
+.welcome-art { height: 100%; padding: 40px; color: var(--cream); background: radial-gradient(circle at 80% 20%,#db395b,transparent 70%),#9b1230; }
+.welcome-art>span { display: block; font: 90px Georgia,serif; }
+.welcome-art i { font: italic 32px Georgia,serif; }
+.service-strip { display: grid; grid-template-columns: 180px 1fr auto; gap: 35px; align-items: center; padding-top: 35px; border-top: 1px solid var(--line); margin-top: 20px; }
+.service-strip>img { height: 190px; object-position: top; }
+.service-strip .eyebrow { margin-bottom: 10px; }
+.service-strip h3 { font-size: 26px; }
+.bulletin { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; background: var(--black); color: var(--cream); }
+.bulletin>.eyebrow { color: #e58c91; }
+.announcement { display: flex; gap: 25px; border-top: 1px solid #ffffff30; padding: 25px 0; }
+.announcement p { color: #baaca0; }
+.announcement h3 { font-size: 26px; }
+.bulletin-icon { color: #df3553; font-size: 30px; }
+.event-list { margin-top: 45px; display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 25px; }
+.event-empty { display: flex; gap: 35px; align-items: center; border: 1px solid var(--line); padding: 40px; grid-column: 1/-1; }
+.calendar-art { width: 90px; height: 100px; display: grid; place-items: center; border: 1px solid #b30d2c80; border-top: 12px solid var(--red); color: var(--red); font: 45px Georgia; flex-shrink: 0; }
+.event-card { border: 1px solid var(--line); }
+.event-card>img { height: 270px; }
+.event-copy { padding: 30px; }
+.event-place { border-top: 1px solid var(--line); padding-top: 15px; }
+.event-copy .text-link { color: var(--red); }
+.church-location { background: #e5dac9; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.location-copy>p { margin-top: 25px; }
+.location-copy>.location-disclaimer { font-size: 10px; }
+.location-visual { min-width: 0; display: flex; flex-direction: column; align-items: center; }
+.location-visual>.text-link { color: var(--red); margin-top: 25px; align-self: center; }
+.location-visual>img { height: 330px; }
+.church-model { width: min(100%,430px); height: 290px; position: relative; perspective: 750px; transform: rotate(-5deg); background: linear-gradient(135deg,#cbb7a3,#ebdfcf); border: 1px solid #bfa68b; border-radius: 4px; overflow: hidden; }
+.model-back { position: absolute; left: 15%; right: 15%; top: 12%; height: 100px; background: #282124; transform: perspective(400px) rotateY(-8deg); display: grid; place-items: center; color: #d9b58c; font-size: 60px; border: 10px solid #4e3940; }
+.model-roof { position: absolute; inset: 0 0 auto; height: 40px; background: repeating-linear-gradient(90deg,transparent 0 35px,#96847440 36px 38px); transform: skewX(-15deg); }
+.model-stage { position: absolute; top: 111px; left: 12%; right: 12%; height: 40px; background: #a77663; transform: skewX(-12deg); box-shadow: 0 12px #7d5248; }
+.model-seats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; position: absolute; left: 15%; right: 15%; bottom: 23px; transform: skewX(-12deg); }
+.model-seats i { height: 20px; background: #803247; box-shadow: 0 5px #592434; border-radius: 4px; }
+.model-label { margin-top: 20px; font-size: 7px; letter-spacing: 1px; text-align: center; color: #826956; }
+#location-map { width: 100%; }
+iframe { border: 0; width: 100%; min-height: 350px; margin-top: 20px; }
+.cells-layout { display: grid; grid-template-columns: 1.25fr 1fr; gap: 40px; margin-top: 45px; }
+.cell-map { position: relative; min-height: 390px; background: #e8e0d5; overflow: hidden; border: 1px solid var(--line); display: grid; place-items: center; }
+.cell-map iframe { margin: 0; height: 100%; }
+.map-grid { position: absolute; inset: 0; opacity: .4; background: repeating-linear-gradient(25deg,transparent 0 70px,#c9bba8 71px 76px,transparent 77px 120px),repeating-linear-gradient(105deg,transparent 0 85px,#c9bba8 86px 91px,transparent 92px 140px); }
+.map-empty { position: relative; z-index: 1; background: #f5ecdfed; padding: 30px; margin: 30px; text-align: center; }
+.map-empty>span { font-size: 40px; color: var(--red); }
+.map-empty h3 { font-size: 24px; }
+.map-empty p, .map-empty small { font-size: 11px; line-height: 1.8; color: #887361; }
+.cell-directory label, .contact label { display: block; font-size: 11px; margin: 0 0 12px; }
+.cell-directory input, .contact input, .contact select { width: 100%; border: 1px solid #bda891; border-radius: 0; background: transparent; padding: 16px; font: 13px Arial; color: #352922; }
+.cell-directory>p { font-size: 12px; line-height: 1.7; margin: 25px 0; color: #806854; }
+.cell-card { padding: 25px 0; border-bottom: 1px solid var(--line); }
+.cell-card h3 { font-size: 24px; }
+.cell-card .text-link { color: var(--red); display: inline-block; }
+.cell-directory>.button { margin-top: 25px; }
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; background: #e5dac9; }
+.contact .text-link { display: inline-block; justify-self: start; margin-top: 25px; color: var(--red); border-color: #bd9b87; }
+.contact>div>p { margin-top: 30px; }
+.contact form { border: 1px solid #bda891; padding: 30px; }
+.contact .form-note { margin-top: 0; font-size: 11px; }
+.contact input, .contact select { margin-bottom: 25px; opacity: .6; }
+.contact button:disabled { background: #c2b3a2; color: #64513f; border: 0; cursor: not-allowed; }
+.contact small { display: block; font-size: 10px; line-height: 1.8; color: #806854; margin-top: 20px; }
+.contact input:focus-visible, .cell-directory input:focus-visible { outline: 3px solid #9a1730; outline-offset: 3px; }
+.photo-a img, .photo-d img { object-position: top; }
+@media(max-width:1000px) { .service-strip { grid-template-columns: 140px 1fr; } .service-strip>.button { grid-column:2; justify-self:start; } .contact { gap:35px; } }
+@media(max-width:700px) {
+  .pastor-empty { flex-direction: column; align-items: flex-start; gap:25px; padding:25px; }
+  .portrait-symbol { width: 100px; font-size: 45px; }
+  .ministry-grid, .bulletin, .church-location, .cells-layout, .contact { grid-template-columns: 1fr; gap: 35px; }
+  .ministry-photo { height: 300px; }
+  .service-strip { grid-template-columns:100px 1fr; gap:20px; }
+  .service-strip>img { height:160px; }
+  .service-strip h3 { font-size:23px; }
+  .service-strip .eyebrow { font-size:7px; }
+  .service-strip>.button { grid-column:1/-1; }
+  .event-empty { padding:25px; gap:20px; align-items:flex-start; }
+  .calendar-art { width:55px; height:65px; font-size:30px; }
+  .event-empty h3 { font-size:25px; margin-top:0; }
+  .church-model { margin-top:15px; }
+  .contact form { padding:25px; }
+}
+.pastor-card>img { height: auto; aspect-ratio: 16/9; object-fit: contain; background: #171212; }
+.pastor-card .text-link { display: inline-block; color: var(--red); border-color: #c3aa96; margin-top: 15px; }
+.worship-channel { margin-left: 20px; }
+@media(max-width:700px) { .worship-channel { margin-left: 0; margin-top: 20px; display: block!important; width: max-content; max-width: 100%; } }
+.pastor-card>iframe { margin: 0; min-height: 360px; aspect-ratio: 16/9; background: #171212; }
+@media(max-width:700px) { .pastor-card>iframe { min-height: 220px; } }
