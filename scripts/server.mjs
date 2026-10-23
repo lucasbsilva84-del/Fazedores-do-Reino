@@ -6,6 +6,6 @@ const args=process.argv.slice(2);
 const option=(name,fallback)=>{const index=args.indexOf(name);return index>=0?args[index+1]:fallback;};
 const port=Number(option('--port',process.env.PORT||4173));
 const host=option('--host',process.env.HOST||'127.0.0.1');
-const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.json':'application/json; charset=utf-8'};
 export const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost');let path=decodeURIComponent(url.pathname);if(path.endsWith('/'))path+='index.html';const file=resolve(root,'.'+path);if(!file.startsWith(root+sep)){res.writeHead(403).end();return;}const data=await readFile(file);res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream','X-Content-Type-Options':'nosniff'}).end(data);}catch{res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'}).end('Página não encontrada');}});
 server.listen(port,host,()=>console.log('Local: http://localhost:'+server.address().port));

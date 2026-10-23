@@ -43,3 +43,11 @@ git switch feat/church-experience
 git pull --ff-only origin feat/church-experience
 npm run dev
 ```
+
+## Comunidade, eventos e configuração manual
+
+Nova etapa na branch `feat/community-ministries-events`, baseada na branch do PR #4. Inclui liderança, ministérios, informativos, agenda, localização e áreas reservadas para formulário e mapa de células.
+
+Edite `public/data/community.json`. O passo a passo está em `docs/CONTENT_EDITING.md`; fontes e pendências em `docs/MEDIA_SOURCES.md`. A lista de células começa vazia e o formulário não envia dados até você configurar o link oficial.
+
+Fotos públicas oficiais substituem os recortes menores; foto identificada dos introdutores e retratos dos pastores ainda pendentes. A liderança tem o vídeo oficial divulgado pela igreja. O modelo do espaço é ilustrativo.

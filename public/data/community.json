@@ -1,0 +1,42 @@
+{
+  "pastors": [
+    {
+      "name": "Pastores sêniores",
+      "role": "Fazedores Cast · Episódio 1",
+      "photo": "",
+      "alt": "Capa do vídeo oficial Testemunho de Conversão dos pastores sêniores",
+      "bio": "Conheça a história da liderança no testemunho publicado pelo canal Fazedores do Reino / TV.",
+      "url": "https://www.youtube.com/watch?v=W7CFEQ4iCiI",
+      "videoUrl": "https://www.youtube.com/embed/W7CFEQ4iCiI"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Uma igreja em células.",
+      "text": "Conheça a comunidade e acompanhe as informações nos nossos canais oficiais.",
+      "url": "https://beacons.ai/fazedoresdoreino/"
+    }
+  ],
+  "events": [],
+  "location": {
+    "address": "Rua João Adami, 222 · Caxias do Sul, RS",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rua+Joao+Adami+222+Caxias+do+Sul+RS",
+    "embedUrl": "",
+    "photo": ""
+  },
+  "ministries": {
+    "louvor": {
+      "photo": "/assets/official-service.jpg",
+      "caption": "Registro oficial de celebração e louvor.",
+      "source": "https://www.instagram.com/fazedoresdoreino/p/Deep64PkdK4/"
+    },
+    "introdutores": {
+      "photo": "",
+      "caption": "A foto oficial da equipe será adicionada em breve.",
+      "source": ""
+    }
+  },
+  "cells": [],
+  "cellsMapEmbedUrl": "",
+  "contactFormUrl": ""
+}
