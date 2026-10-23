@@ -1,9 +1,14 @@
-# feat: introduce Fazedores do Reino institutional experience
+Cria o site institucional da Fazedores do Reino com tipografia expressiva, animações na rolagem, navegação responsiva e área imersiva separada em `/vr/`.
 
-Cria o site institucional com navegação responsiva, identidade editorial em verde e creme, animações respeitando movimento reduzido e acesso à experiência 360° em página separada.
+Inclui servidor local sem dependências, modelos de issues/PR e GitHub Actions apenas para validação. Não configura hospedagem, domínio ou deploy.
 
-Inclui servidor local sem dependências, modelos de contribuição e CI exclusivamente de validação, sem deploy.
+Closes #1
+Closes #2
 
-Validação: `npm run check`, inspeção HTTP e QA visual local.
+Relacionado a #3: identidade oficial, fotos de alta resolução e tour real permanecem pendentes.
 
-Limitações: imagem inicial provisória extraída da referência; laboratório 360° ilustrativo, sem panorama oficial ou WebXR. Endereço e programação completa aguardam validação. Issues e PR remotos ainda precisam ser criados no repositório de destino.
+Validação: `npm run check` passou (sintaxe e teste HTTP); QA local confirmou a página inicial, navegação para /vr/ e controles direita/centralizar. Viewport mobile e headset não testados.
+
+Limitações: imagem inicial provisória de baixa resolução; área imersiva é uma demonstração abstrata, sem panorama real ou WebXR. Endereço e programação completa aguardam validação.
+
+Execução: `npm run dev` → http://localhost:4173; área imersiva em /vr/.

@@ -21,7 +21,7 @@ npm run check
 - `public/`: site institucional, estilos e interações.
 - `public/vr/`: laboratório 360° isolado. Panorama ilustrativo; não é uma captura da igreja nem VR estereoscópico/WebXR.
 - `scripts/`: servidor HTTP local.
-- `docs/issues/`: especificações prontas para abertura no GitHub; não representam issues já criadas.
+- `docs/issues/`: especificações de referência; issues reais #1, #2 e #3 no GitHub.
 - `.github/`: modelos de issue, PR e verificação automática sem deploy.
 
 ## Conteúdo
@@ -30,4 +30,4 @@ Nome, perfil Instagram e culto domingo às 18h foram extraídos da referência e
 
 ## Fluxo Git
 
-`main` contém a base; `feat/church-experience` reúne a implementação para revisão em PR. Use commits por mudança coesa. Issues e PR reais dependem de um repositório remoto disponível. Não fazer merge automático.
+`main` contém a base; `feat/church-experience` reúne a implementação para revisão em PR. Use commits por mudança coesa. Issues #1 e #2 acompanham esta entrega; #3 registra conteúdo oficial e tour real pendentes. Não fazer merge automático.
