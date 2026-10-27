@@ -17,3 +17,7 @@ Validar os MP4 reais em desktop/celular: autoplay silencioso, playsInline, alter
 ## Vídeo principal recebido
 
 Arquivo snapinsta-1793127643242.mp4 integrado em public/media/abertura-1.mp4 (5.142.032 bytes). videos[0].src já configurado. O segundo MP4 continua pendente; a miniatura de alternância fica oculta enquanto não houver segundo vídeo configurado. CSS original preservado. Build e lint passaram após integração. Reprodução e áudio ainda precisam de conferência visual em navegador.
+
+## Segundo vídeo recebido
+
+Arquivo snapinsta-1793127994724.mp4 integrado em public/media/abertura-2.mp4 (1.800.654 bytes). videos[1].src configurado: os dois vídeos agora estão disponíveis e a miniatura ativa a alternância animada original. Os MP4 não estão mais pendentes. CSS original preservado. Build e lint passaram; reprodução, áudio e transição renderizada ainda precisam de conferência manual em navegador.
