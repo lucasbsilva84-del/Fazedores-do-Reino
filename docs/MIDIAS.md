@@ -13,3 +13,7 @@ Edite `src/config.js` somente com dados confirmados.
 - `/vr/` precisa de panoramas equiretangulares reais 2:1 ou modelo GLB/GLTF autorizado e integração do visualizador. Preencher `panorama` sozinho não ativa VR.
 
 Validar os MP4 reais em desktop/celular: autoplay silencioso, playsInline, alternância 1/2, áudio somente do ativo, rede lenta e arquivo ausente. Carregamento termina com dados, erro ou em 5 segundos. Reduced motion pausa os vídeos e elimina as animações; ativar áudio é ação explícita de reprodução.
+
+## Vídeo principal recebido
+
+Arquivo snapinsta-1793127643242.mp4 integrado em public/media/abertura-1.mp4 (5.142.032 bytes). videos[0].src já configurado. O segundo MP4 continua pendente; a miniatura de alternância fica oculta enquanto não houver segundo vídeo configurado. CSS original preservado. Build e lint passaram após integração. Reprodução e áudio ainda precisam de conferência visual em navegador.

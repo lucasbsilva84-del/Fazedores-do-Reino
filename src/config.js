@@ -7,7 +7,7 @@ export const church = {
   logo: '/media/logo.png',
   cover: '', // Foto oficial de capa. Enquanto vazia, usa composição gráfica com a logo.
   videos: [
-    { src: '', file: '/media/abertura-1.mp4', position: '50% 50%', mobilePosition: '50% 50%', reference: 'https://www.instagram.com/reel/De8G6lrRhBD/' },
+    { src: '/media/abertura-1.mp4', file: '/media/abertura-1.mp4', position: '50% 50%', mobilePosition: '50% 50%', reference: 'https://www.instagram.com/reel/De8G6lrRhBD/' },
     { src: '', file: '/media/abertura-2.mp4', position: '50% 50%', mobilePosition: '50% 50%', reference: 'https://www.instagram.com/reel/DK8LurRRzG9/' },
   ], // Após copiar os MP4, preencha src com o valor de file.
   photos: { church: '', community: '', worship: '', welcome: '', events: '' },
