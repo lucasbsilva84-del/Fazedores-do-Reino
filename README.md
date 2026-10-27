@@ -1,10 +1,8 @@
 ﻿# Fazedores do Reino
 
-Experiência local React/Vite + GSAP: transição geométrica entre duas aberturas, recorte na rolagem, revelações em perspectiva, paralaxe e cards com profundidade. Respeita prefers-reduced-motion.
+Adaptação de conteúdo em português do projeto Adrian Hajdin/JavaScript Mastery, referência visual Zentry. CSS original preservado integralmente, com as mesmas cores, fontes, classes, recortes e animações. Componentes originais restaurados; identidade e textos adaptados para a igreja.
 
-## Execução
-
-Node.js 20 ou superior:
+## Executar
 
 ```sh
 npm ci
@@ -13,8 +11,8 @@ npm run build
 npm run lint
 ```
 
-No PowerShell com scripts bloqueados use npm.cmd. Abra http://127.0.0.1:5173 e http://127.0.0.1:5173/vr/.
+No PowerShell use npm.cmd se necessário. Abra http://127.0.0.1:5173. Página VR separada em /vr/, sem simulação de panorama real.
 
-Todos os dados editáveis ficam em src/config.js. Consulte [mídias pendentes](docs/MIDIAS.md) e [créditos e condições](docs/CREDITOS.md). Logo PNG em public/media/logo.png. Não recebemos MP4 ou fotos da comunidade. Não há envio simulado, dados institucionais presumidos ou VR falso.
+Dados e caminhos de mídia em src/config.js. MP4 e fotos oficiais ainda pendentes; a marca recebida é a alternativa temporária, sem mídias de jogos. Vídeos: public/media/abertura-1.mp4 e abertura-2.mp4; preencher videos[].src. Detalhes em docs/MIDIAS.md e docs/CREDITOS.md. Não há envio de formulário configurado.
 
-Issue #8. Branch feat/cinematic-fazedores a partir de main. Branches anteriores preservadas. Sem publicação, deploy, domínio ou merge automático.
+Issue #8, PR #9, branch feat/cinematic-fazedores. Sem deploy ou merge.

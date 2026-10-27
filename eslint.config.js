@@ -26,7 +26,6 @@ export default [
       "react-refresh": reactRefresh,
     },
     rules: {
-      "tailwindcss/no-custom-classname": "off",
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,
