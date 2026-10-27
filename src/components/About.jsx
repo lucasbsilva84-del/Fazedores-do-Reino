@@ -51,11 +51,18 @@ const About = () => {
 
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
-          <img
-            src={church.photos.church || church.cover || church.logo}
-            alt="Fazedores do Reino"
+          <video
+            src={church.videos[0].src}
+            poster={church.cover || undefined}
+            aria-label="Vídeo da comunidade Fazedores do Reino"
+            autoPlay={!matchMedia('(prefers-reduced-motion: reduce)').matches}
+            controls={matchMedia('(prefers-reduced-motion: reduce)').matches}
+            muted
+            loop
+            playsInline
+            preload="metadata"
             className="absolute left-0 top-0 size-full object-cover"
-          />
+          >Seu navegador não suporta a reprodução deste vídeo.</video>
         </div>
       </div>
     </div>
