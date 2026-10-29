@@ -62,9 +62,10 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
     <div className="relative size-full">
       <img
         src={src || church.logo}
-        alt="Fazedores do Reino"
+        alt={typeof title === "string" ? title : "Fazedores do Reino"}
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
+
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -141,7 +142,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src={church.photos.community}
+            src="/media/comunhao.png"
             title={
               <>
                 comunhão
@@ -175,10 +176,10 @@ const Features = () => (
           </div>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_2 overflow-hidden">
           <img
-            src={church.photos.community || church.logo}
-            alt="Fazedores do Reino"
+            src="/media/juntos.png"
+            alt="Juntos para servir — Fazedores do Reino"
             className="size-full object-cover object-center"
           />
         </BentoTilt>

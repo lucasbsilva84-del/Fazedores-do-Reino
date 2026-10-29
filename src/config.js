@@ -10,7 +10,14 @@ export const church = {
     { src: '/media/abertura-1.mp4', file: '/media/abertura-1.mp4', position: '50% 50%', mobilePosition: '50% 50%', reference: 'https://www.instagram.com/reel/De8G6lrRhBD/' },
     { src: '/media/abertura-2.mp4', file: '/media/abertura-2.mp4', position: '50% 50%', mobilePosition: '50% 50%', reference: 'https://www.instagram.com/reel/DK8LurRRzG9/' },
   ], // Após copiar os MP4, preencha src com o valor de file.
-  photos: { church: '', community: '', worship: '', welcome: '', events: '' },
+  photos: {
+    church: '',
+    community: '',
+    worship: '/media/louvor.png',
+    welcome: '',
+    events: '',
+    service: '/media/servico.png',
+  },
   gallery: [], // { src, alt, caption }; liderança: { name, role, photo, bio }
   panorama: '', // Reservado a panorama equiretangular 2:1 real; viewer ainda não integrado.
 };
